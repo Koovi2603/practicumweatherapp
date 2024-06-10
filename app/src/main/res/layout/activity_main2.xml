@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Day"
+        android:layout_marginTop="25dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etMinimumTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Minimum Temperature"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etDay"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/etMaximumTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Maximum Temperature"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etMinimumTemperature"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/etWeatherCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Weather Condition"
+        android:inputType="text"
+        android:layout_below="@id/etMaximumTemperature"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMaximumTemperature"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
